@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calculator, FileText, Users, TrendingUp, Shield, ClipboardList } from "lucide-react"
+import { Calculator, FileText, Users, TrendingUp, Shield, ClipboardList, BadgeCheck } from "lucide-react"
 
 const services = [
   {
@@ -37,6 +37,12 @@ const services = [
     title: "Восстановление учёта",
     description:
       "Восстанавливаем запущенный или утерянный бухгалтерский учёт за любой период. Разбираемся в сложных ситуациях, приводим документацию в порядок и исправляем ошибки прошлых периодов.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Регистрация ИП",
+    description:
+      "Откройте своё дело без лишних хлопот — мы возьмём на себя весь процесс. Подберём коды ОКВЭД, выберем оптимальную систему налогообложения (УСН, патент, НПД) и подадим документы в ФНС. Готовое ИП за 3–5 рабочих дней.",
   },
 ]
 
