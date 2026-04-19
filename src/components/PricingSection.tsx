@@ -4,39 +4,39 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Старт",
+    price: "5 000",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "УСН (доходы или доходы-расходы)",
+      "До 50 операций в месяц",
+      "Квартальная отчётность",
+      "Расчёт налогов и взносов",
+      "Консультации по e-mail",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Бизнес",
+    price: "12 000",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "УСН или ОСНО",
+      "До 200 операций в месяц",
+      "Полная отчётность в ФНС и фонды",
+      "Расчёт зарплаты до 5 сотрудников",
+      "Кадровые документы",
+      "Консультации по телефону и e-mail",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Премиум",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
-      "Персональный менеджер",
-      "6 месяцев поддержки",
+      "ОСНО, любой режим",
+      "Неограниченное число операций",
+      "Полный кадровый учёт",
+      "Персональный бухгалтер",
+      "Сопровождение при проверках",
     ],
     highlighted: false,
   },
@@ -60,10 +60,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">подходящий тариф</span> для вашего бизнеса
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Фиксированная ежемесячная оплата — никаких скрытых платежей и сюрпризов
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export function PricingSection() {
                       <>
                         <span className="text-lg font-normal text-muted-foreground">от </span>
                         {tier.price}
-                        <span className="text-lg font-normal text-muted-foreground"> ₽</span>
+                        <span className="text-lg font-normal text-muted-foreground"> ₽/мес</span>
                       </>
                     )}
                   </span>
@@ -112,7 +112,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Обсудить условия" : "Выбрать тариф"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +121,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все тарифы включают <span className="text-primary font-semibold">бесплатную начальную консультацию</span> и{" "}
+            <span className="text-primary font-semibold">аудит текущего учёта</span>
           </p>
         </div>
       </div>

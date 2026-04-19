@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Точность", description: "Работаем без ошибок — каждая цифра проверена и обоснована" },
+  { title: "Надёжность", description: "Никаких штрафов и просроченных отчётов за 7 лет работы" },
+  { title: "Прозрачность", description: "Фиксированная стоимость без скрытых платежей и сюрпризов" },
+  { title: "Конфиденциальность", description: "Ваши финансовые данные под надёжной защитой" },
+  { title: "Доступность", description: "Всегда на связи — отвечаем на вопросы в течение дня" },
+  { title: "Экспертиза", description: "Глубокое знание налогового законодательства и его изменений" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "100+", label: "Клиентов" },
+  { number: "0", label: "Штрафов за 7 лет" },
+  { number: "7+", label: "Лет опыта" },
+  { number: "15+", label: "Отраслей бизнеса" },
 ]
 
 export function AboutSection() {
@@ -27,19 +27,19 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О нас
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Бухгалтерия, которой{" "}
             <span className="text-primary relative">
-              впечатляет
+              доверяют
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            Мы занимаемся бухгалтерским сопровождением малого и среднего бизнеса уже 7 лет. За это время наши клиенты ни разу не получили штраф по нашей вине — это наша главная гордость.
           </p>
         </div>
 
